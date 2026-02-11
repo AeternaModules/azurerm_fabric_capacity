@@ -1,5 +1,5 @@
-resource "azurerm_fabric_capacity" "fabric_capacitys" {
-  for_each = var.fabric_capacitys
+resource "azurerm_fabric_capacity" "fabric_capacities" {
+  for_each = var.fabric_capacities
 
   location               = each.value.location
   name                   = each.value.name

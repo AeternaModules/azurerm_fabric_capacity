@@ -1,6 +1,6 @@
-variable "fabric_capacitys" {
+variable "fabric_capacities" {
   description = <<EOT
-Map of fabric_capacitys, attributes below
+Map of fabric_capacities, attributes below
 Required:
     - location
     - name
