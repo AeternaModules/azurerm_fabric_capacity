@@ -1,3 +1,7 @@
+output "fabric_capacities_id" {
+  description = "Map of id values across all fabric_capacities, keyed the same as var.fabric_capacities"
+  value       = { for k, v in azurerm_fabric_capacity.fabric_capacities : k => v.id }
+}
 output "fabric_capacities_administration_members" {
   description = "Map of administration_members values across all fabric_capacities, keyed the same as var.fabric_capacities"
   value       = { for k, v in azurerm_fabric_capacity.fabric_capacities : k => v.administration_members }
